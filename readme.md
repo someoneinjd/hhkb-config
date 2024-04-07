@@ -1,36 +1,47 @@
-# Quantum Mechanical Keyboard Firmware
+# HHKB Config
 
-[![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
-[![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
-[![Docs Status](https://img.shields.io/badge/docs-ready-orange.svg)](https://docs.qmk.fm)
-[![GitHub contributors](https://img.shields.io/github/contributors/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/pulse/monthly)
-[![GitHub forks](https://img.shields.io/github/forks/qmk/qmk_firmware.svg?style=social&label=Fork)](https://github.com/qmk/qmk_firmware/)
+> Keyboard: Keychron Q60 MAX
 
-This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github.com/tmk/tmk_keyboard) with some useful features for Atmel AVR and ARM controllers, and more specifically, the [OLKB product line](https://olkb.com), the [ErgoDox EZ](https://ergodox-ez.com) keyboard, and the Clueboard product line.
+## Keymap Changes
 
-## Documentation
+| Key                             | Old                       | New                       |
+| ------------------------------- | ------------------------- | ------------------------- |
+| <kbd>Delete</kbd>               | Delete                    | Backspace                 |
+| <kbd>Fn</kbd> + <kbd>Ctrl</kbd> | Turn the backlight on/off | Ctrl                      |
+| <kbd>Fn</kbd> + <kbd>Cmd</kbd>  | None                      | Turn the backlight on/off |
 
-* [See the official documentation on docs.qmk.fm](https://docs.qmk.fm)
+## Setup
 
-The docs are powered by [Docsify](https://docsify.js.org/) and hosted on [GitHub](/docs/). They are also viewable offline; see [Previewing the Documentation](https://docs.qmk.fm/#/contributing?id=previewing-the-documentation) for more details.
+1. Install QMK CLI
 
-You can request changes by making a fork and opening a [pull request](https://github.com/qmk/qmk_firmware/pulls), or by clicking the "Edit this page" link at the bottom of any page.
+    ```shell
+    # Homebrew (Mac)
+    brew install qmk/qmk/qmk
+    export PATH=/usr/local/opt/arm-none-eabi-binutils/bin:$PATH
+    export PATH=/usr/local/opt/arm-none-eabi-gcc@8/bin:$PATH
+    export PATH=/usr/local/opt/avr-gcc@8/bin:$PATH
+    ```
 
-## Supported Keyboards
+2. Clone this repo
 
-* [Planck](/keyboards/planck/)
-* [Preonic](/keyboards/preonic/)
-* [ErgoDox EZ](/keyboards/ergodox_ez/)
-* [Clueboard](/keyboards/clueboard/)
-* [Cluepad](/keyboards/clueboard/17/)
-* [Atreus](/keyboards/atreus/)
+    ```shell
+    git clone https://github.com/someoneinjd/qmk_firmware --recursive
+    ```
 
-The project also includes community support for [lots of other keyboards](/keyboards/).
+3. Use QMK CLI to setup
 
-## Maintainers
+    ```shell
+    qmk setup
+    ```
 
-QMK is developed and maintained by Jack Humbert of OLKB with contributions from the community, and of course, [Hasu](https://github.com/tmk). The OLKB product firmwares are maintained by [Jack Humbert](https://github.com/jackhumbert), the Ergodox EZ by [ZSA Technology Labs](https://github.com/zsa), the Clueboard by [Zach White](https://github.com/skullydazed), and the Atreus by [Phil Hagelberg](https://github.com/technomancy).
+## Build
 
-## Official Website
+```shell
+# Build & flash firmware 
+make keychron/q60_max/ansi:default:flash
 
-[qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+# Build only
+make keychron/q60_max/ansi:default
+```
+
+[ref](./keyboards/keychron/q60_max/readme.md)
