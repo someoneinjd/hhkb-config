@@ -4,11 +4,11 @@
 
 ## Keymap Changes
 
-| Key                             | Old                       | New                       |
-| ------------------------------- | ------------------------- | ------------------------- |
-| <kbd>Delete</kbd>               | Delete                    | Backspace                 |
-| <kbd>Fn</kbd> + <kbd>Ctrl</kbd> | Turn the backlight on/off | Ctrl                      |
-| <kbd>Fn</kbd> + <kbd>Cmd</kbd>  | None                      | Turn the backlight on/off |
+| Key                               | Old                         | New                         |
+| --------------------------------- | --------------------------- | --------------------------- |
+| <kbd>Delete</kbd>                 | Delete                      | Backspace                   |
+| <kbd>Fn</kbd> + <kbd>Ctrl</kbd>   | Turn the backlight on/off   | Ctrl                        |
+| <kbd>Fn</kbd> + <kbd>Enter</kbd>  | None                        | Turn the backlight on/off   |
 
 ## Setup
 
