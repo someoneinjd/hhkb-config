@@ -9,6 +9,10 @@
 | <kbd>Delete</kbd>                 | Delete                      | Backspace                   |
 | <kbd>Fn</kbd> + <kbd>Ctrl</kbd>   | Turn the backlight on/off   | Ctrl                        |
 | <kbd>Fn</kbd> + <kbd>Enter</kbd>  | None                        | Turn the backlight on/off   |
+| <kbd>Space</kbd> + <kbd>H</kbd>   | None                        | Left arrow                  |
+| <kbd>Space</kbd> + <kbd>J</kbd>   | None                        | Down arrow                  |
+| <kbd>Space</kbd> + <kbd>K</kbd>   | None                        | Up arrow                    |
+| <kbd>Space</kbd> + <kbd>L</kbd>   | None                        | Right arrow                 |
 
 ## Setup
 
