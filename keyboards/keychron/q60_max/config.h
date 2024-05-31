@@ -74,3 +74,4 @@
 #define FN_Z_KEY RGB_RMOD
 
 #define MATRIX_IO_DELAY 10
+#define RETRO_TAPPING
