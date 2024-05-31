@@ -59,4 +59,3 @@
 #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 #endif
-#define RETRO_TAPPING
